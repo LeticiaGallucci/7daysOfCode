@@ -1,6 +1,7 @@
 :root {
     --base-white: #FFFFFF;
     --gray-500: #667085;
+    --gray-900: #101828;
     --fonte-principal: 'Inter', sans-serif;
 }
 
@@ -87,4 +88,45 @@ html, body {
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
+}
+
+.cabecalho {
+    display: flex;
+    height: 407px;
+    padding: 96px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.cabecalho__subtitulo {
+    color: #8E2424;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.cabecalho__titulo {
+    width: 603px;
+    color: var(--gray-900);
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px; 
+    letter-spacing: -0.96px;
+}
+
+.cabecalho__texto {
+    width: 791px;
+    color: var(--gray-500, #667085);
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
 }
