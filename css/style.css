@@ -5,16 +5,12 @@
     --fonte-principal: 'Inter', sans-serif;
 }
 
-html, body {
-    height: 100%;
-}
-
 .navbar {
     display: flex;
+    height: 80px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height: 80px;
 }
 
 .navbar__cabecalho {
@@ -92,7 +88,6 @@ html, body {
 
 .cabecalho {
     display: flex;
-    height: 407px;
     padding: 96px 0px;
     flex-direction: column;
     align-items: center;
@@ -129,4 +124,59 @@ html, body {
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
+    padding-top: 12px;
+}
+
+.metricas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    align-self: stretch;
+}
+
+.metricas__container {
+    display: flex;
+    margin: 0 80px 96px 80px;
+    padding: 0px 32px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 64px;
+}
+
+.metrica__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+}
+
+.metrica__item__numeros {
+    color: #8E2424;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: -1.2px;
+    margin-bottom: 12px;
+}
+
+.metrica__item__categorias {
+    color: var(--gray-900);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; 
+    margin-bottom: 8px;
+}
+
+.metrica__item__texto {
+    color: var(--gray-500);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 }
